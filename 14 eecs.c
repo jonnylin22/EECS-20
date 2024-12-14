@@ -16,7 +16,6 @@ Base 3 Results:
 ***/
 
 #include <stdio.h>
-#include <math.h>
 
 void base3(int num){
     if (num == 0) {
@@ -31,7 +30,6 @@ void base3(int num){
 int main(void) {
     int num1;
     int num2;
-    int n = 9;      // choose how many ternary digits // 9 digits
 
     printf("Welcome to 3-Base-10!\n");
     printf("Enter First Number (in decimal): ");
@@ -40,11 +38,7 @@ int main(void) {
     scanf("%d[^\n]\n", &num2);
 
     printf("Base 3 Results:\n");
-    printf("%d in base3 is ", num1 );
-    base3(num1);
-    printf("\n%d in base3 is ", num2 );
-    base3(num2);
-    printf("\n");
-    base3(num1); printf(" + "); base3(num2); printf(" = "); 
-    base3(num1+num2);
+    printf("%d in base3 is ", num1 ); base3(num1);
+    printf("\n%d in base3 is ", num2 ); base3(num2); printf("\n");
+    base3(num1); printf(" + "); base3(num2); printf(" = "); base3(num1+num2);
 }
